@@ -4,7 +4,7 @@
 
 This repository implements a modern, Git-driven workflow for managing Industrial Control System (ICS) network segmentation based on the ISA/IEC 62443 standard. It replaces static diagrams with a validated, machine-readable Data Model.
 
-![Generated Diagram](ICS-2024_6-Purdue-HD.png)
+![Generated Diagram](ICS-2024_6-Purdue-HD-1.png)
 *Architecture derived from [Palo Alto Networks: What is the Purdue Model for ICS Security?](https://www.paloaltonetworks.com/cyberpedia/what-is-the-purdue-model-for-ics-security)*
 
 ## Why "Z&C as Code"?
