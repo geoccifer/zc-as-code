@@ -65,8 +65,23 @@ npx @mermaid-js/mermaid-cli -i "ICS-2024_6-Purdue.md" -o "ICS-2024_6-Purdue-HD.p
 *   `validate_schema.py`: **The Gatekeeper.** Python/Pydantic script to enforce rules (Referential Integrity, IP formats).
 *   `yaml_to_mermaid.py`: **The Renderer.** Converts YAML to a rich Mermaid.js diagram.
 
-## Roadmap
+## Future Ideas & Roadmap
 
-*   **Phase 1 (Complete):** Data Digitization & Visualization.
-*   **Phase 2:** Automated Firewall Rule Generation (Ansible/Terraform).
-*   **Phase 3:** Real-time Drift Detection via OT Sensors.
+The current repository is just the foundation (Phase 1). The goal is to move from "Documentation as Code" to "Security as Code."
+
+*   **NSPM Integration**: Build a pipeline that exports this data model to Network Security Policy Management tools to validate actual firewall rules against the defined intent.
+*   **OT Sensor Enrichment**: Expose the Z&C model via a lightweight API. OT sensors (like Nozomi, Dragos, or Claroty) could consume this to automatically tag assets with their intended Zone and Criticality context.
+*   **Automated Firewall Config**: Generate vendor-agnostic firewall rules (e.g., via Ansible or Terraform) directly from the Conduits defined in the YAML.
+*   **CI/CD Compliance**: Add a GitHub Action that fails a build if a new Asset is added without a valid Zone or Criticality tag.
+
+## Contributing
+
+Contributions are welcome! Whether it's fixing a bug in the Python scripts, improving the Mermaid styling, or adding new validation rules (e.g., checking for overlapping IP ranges).
+
+1.  Fork the project.
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
+
+If you have ideas for the roadmap above, feel free to open an Issue to discuss!
