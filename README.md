@@ -1,4 +1,4 @@
-# Z&C as Code: Automated OT Network Segmentation
+# Z&C as Code: Automated OT Network Segmentation Compliance
 
 **Zone & Conduit (Z&C) Management via Infrastructure as Code.**
 
